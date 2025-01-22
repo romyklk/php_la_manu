@@ -59,19 +59,19 @@ les valeurs suivantes sont considérées comme vides :
 $var1 = 0;
 $var2 = "";
 
-if(empty($var1)){
+if (empty($var1)) {
     echo "0 ou vide ou non défini <br>";
 }
 
-if(isset($var2)){
+if (isset($var2)) {
     echo "La variable existe mais avec une valeur vide <br>";
 }
 
 $var3 = 4;
 
-if(isset($var3)){
+if (isset($var3)) {
     echo "La variable existe et contient une valeur <br>";
-}else{
+} else {
     echo "La variable n'existe pas <br>";
 }
 
@@ -81,18 +81,17 @@ $a = 10;
 $b = 5;
 $c = 2;
 
-if($a > $b){ 
+if ($a > $b) {
     //Si la condition est vraie alors le code qui se trouve dans le bloc IF est exécuté
     echo "$a est plus grand que $b <br>";
-    
-}else{
+} else {
     echo "$a est plus petit que $b <br>";
 }
 
 // Combinaison avec l'opérateur logique &&(ET)
 
 //Avec && il faut que les deux conditions soient vraies pour que le code du bloc IF soit exécuté
-if($a > $b && $b > $c){ 
+if ($a > $b && $b > $c) {
     echo "$a est plus grand que $b et $b est plus grand que $c <br>";
 }
 
@@ -100,7 +99,7 @@ if($a > $b && $b > $c){
 
 //Avec || il faut que l'une des deux conditions soit vraie pour que le code du bloc IF soit exécuté
 
-if($a == 8 || $b > $c){ 
+if ($a == 8 || $b > $c) {
     echo "$a est plus grand que $b ou $b est plus grand que $c <br>";
 }
 
@@ -108,7 +107,7 @@ if($a == 8 || $b > $c){
 
 //Avec XOR il faut que l'une des deux conditions soit vraie pour que le code du bloc IF soit exécuté.Si les deux conditions sont vraies alors le code du bloc IF n'est pas exécuté
 
-if($a == 10 xor $b < $c){ 
+if ($a == 10 xor $b < $c) {
     echo "Une seule des deux conditions doit être vraie <br>";
 }
 
@@ -118,16 +117,13 @@ if($a == 10 xor $b < $c){
 ELSE IF permet de tester plusieurs conditions dans le même bloc de code.
 */
 
-if($a == 1){
+if ($a == 1) {
     echo "Cas 1 :  a vaut 1 <br>";
-
-}elseif($a == 2){
+} elseif ($a == 2) {
     echo "Cas 2 :  a vaut 2 <br>";
-
-}elseif($b > $c){
+} elseif ($b > $c) {
     echo "Cas 3 :  b est plus grand que c <br>";
-
-}else{
+} else {
     echo "Cas 4 : b vaut $b et c vaut $c <br>";
 }
 
@@ -166,9 +162,9 @@ echo $user . "<br>";
 $nb1 = 1;
 $nb2 = "1";
 
-if($nb1 === $nb2){
+if ($nb1 === $nb2) {
     echo "Les deux variables sont égales <br>";
-}else{
+} else {
     echo "il ne s'agit pas de la même chose <br>";
 }
 
@@ -189,18 +185,18 @@ default : représente le cas par défaut
 
 $color = "rouge";
 
-switch($color){
+switch ($color) {
     case "bleu":
         echo "Vous aimez le bleu <br>";
-    break;
+        break;
 
     case "rouge":
         echo "Vous aimez le rouge <br>";
-    break;
+        break;
 
     default:
         echo "Vous n'aimez ni le bleu ni le rouge <br>";
-    break;
+        break;
 }
 
 echo '<h2 class="subtitle"> MATCH </h2>';
@@ -211,7 +207,7 @@ Elle permet de faire la même chose que switch mais avec une syntaxe plus concis
 
 $fruit = "pomme";
 
-$message = match($fruit){
+$message = match ($fruit) {
     "kiwi" => "Vous aimez les kiwis",
     "pomme" => "Vous aimez les pommes",
     "banane" => "Vous aimez les bananes",
@@ -266,3 +262,13 @@ Cas de test 4 :
 */
 
 echo '<h2 class="solution">Correction : Exercice 1</h2>';
+
+if (empty($nom) || !isset($nom)) {
+    echo '<p>Le nom est obligatoire</p>';
+
+} else if (empty($email) || !isset($email)) {
+    echo '<p>L\'email est obligatoire</p>';
+    
+} else {
+    echo '<p>Merci, votre formulaire a été soumis avec succès.</p>';
+}
