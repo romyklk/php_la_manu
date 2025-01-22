@@ -177,3 +177,92 @@ if($nb1 === $nb2){
 == comparaison de valeurs
 === comparaison de types et de valeurs
 */
+
+echo '<h2 class="subtitle"> SWITCH </h2>';
+
+/* 
+switch permet de comparer une variable à une série de valeurs possibles.
+case : représente une valeur possible
+break : permet de sortir de la structure switch
+default : représente le cas par défaut
+*/
+
+$color = "rouge";
+
+switch($color){
+    case "bleu":
+        echo "Vous aimez le bleu <br>";
+    break;
+
+    case "rouge":
+        echo "Vous aimez le rouge <br>";
+    break;
+
+    default:
+        echo "Vous n'aimez ni le bleu ni le rouge <br>";
+    break;
+}
+
+echo '<h2 class="subtitle"> MATCH </h2>';
+/* 
+match est une nouvelle structure de contrôle introduite en PHP 8.0.
+Elle permet de faire la même chose que switch mais avec une syntaxe plus concise et plus lisible.
+*/
+
+$fruit = "pomme";
+
+$message = match($fruit){
+    "kiwi" => "Vous aimez les kiwis",
+    "pomme" => "Vous aimez les pommes",
+    "banane" => "Vous aimez les bananes",
+    default => "Vous n'aimez ni les kiwis, ni les pommes, ni les bananes"
+};
+
+echo $message . "<br>";
+
+/* 
+Quand utiliser switch ou match ?
+    SWITCH :
+        - sur du code legacy(ancien code)
+        - lorsque vous avez besoin de fall-through(exécution de plusieurs cas)
+    MATCH :
+        - sur du code moderne(nouveau code PHP 8.0)
+        - lorsque vous avez besoin d'une comparaison stricte
+*/
+
+echo '<h2 class="todo">Exercice 1</h2>';
+
+/* 
+Contexte :
+Un site web propose un formulaire de contact avec deux champs : nom et email. Lorsqu’un utilisateur soumet le formulaire,
+les données sont transmises au script PHP pour être vérifiées.
+
+Énoncé :
+Écrivez un script PHP qui :
+1 - Vérifie si la variable $nom (nom de l’utilisateur) est définie et non nulle en utilisant isset.
+2 - Vérifie si la variable $email est vide en utilisant empty.
+3 - Affiche un message approprié selon les cas suivants :
+   - Si $nom n’est pas défini : "Le champ nom est requis."
+   - Si $email est vide : "Le champ email est obligatoire."
+   - Si les deux champs sont correctement remplis : "Merci, votre formulaire a été soumis avec succès."
+
+Testez votre script avec les cas suivants :
+Cas de test 1 :
+    $nom = "Alice";
+    $email = "";
+
+Cas de test 2 :
+    $nom = "";
+    $email = "alice@example.com";
+
+Cas de test 3 :
+    $nom = null;
+    $email = null;
+
+Cas de test 4 :
+    $nom = "Alice";
+    $email = "alice@example.com";
+
+*/
+
+echo '<h2 class="solution">Correction : Exercice 1</h2>';
