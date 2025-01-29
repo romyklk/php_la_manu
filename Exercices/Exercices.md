@@ -97,3 +97,38 @@ Découvrir et utiliser l'expression match pour gérer des conditions complexes.
     - 65 ans et plus : "Senior"
 
 3. Affichez la catégorie d'utilisateur
+
+
+# FONCTIONS
+
+TODO :
+Écrivez une fonction appelée "verifierMoyenne" qui prend en paramètre une note , une matière , le prénom et le collège d'un élève et qui affiche la phrase suivante :
+Si la moyenne est supérieure ou égale à 10, on affiche "Bravo [prénom] ! Vous êtes reçu(e) au [collège] !"
+Si la moyenne est supérieure ou égale à 8 et inférieure à 10, on affiche "Vous devez passer l'examen de rattrapage en [matière] !"
+Si la moyenne est inférieure à 8, on affiche "Désolé [prénom] ! Vous êtes recalé(e) !"
+
+Si aucun nom de collège n'est passé en paramètre, alors le collège par défaut est "Collège de France"
+Si la note de l'élève n'est pas un nombre, on affiche "La note doit être un nombre !"
+Si la note de l'élève n'est pas comprise entre 0 et 20, on affiche "La note doit être comprise entre 0 et 20 !"
+Si le prénom de l'élève n'est pas une chaîne de caractères, on affiche "Le prénom doit être une chaîne de caractères !"
+Si la matière n'est pas une chaîne de caractères, on affiche "La matière doit être une chaîne de caractères !"
+
+Si la note est comprise entre 17 et 20, on affiche "Très bien"
+
+
+
+<hr><hr><hr><hr><hr>
+
+# BOUCLES
+
+
+Exercice : Afficher toutes les tables de multiplication de 1 à 12
+Objectif :
+Utiliser des boucles imbriquées en PHP pour générer et afficher toutes les tables de multiplication de 1 à 12. Chaque table doit être affichée dans une liste HTML.
+
+Instructions :
+Créez une structure HTML de base.
+
+Utilisez une boucle for pour parcourir les tables de 1 à 12.
+
+Pour chaque table, utilisez une deuxième boucle for pour parcourir les multiplicateurs de 1 à 10.
