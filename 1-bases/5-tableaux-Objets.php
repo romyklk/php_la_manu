@@ -51,7 +51,7 @@ Ils sont composés de valeurs de différentes types, et peuvent être indexés p
 
 $liste = array("Martin", "Pierre", "Jean", "Paul", "Guillaume");
 
-$dataListe= ["Martin", "Pierre", "Jean", "Paul", "Guillaume"];
+$dataListe = ["Martin", "Pierre", "Jean", "Paul", "Guillaume"];
 
 echo '<pre>'; //<pre> est une balise HTML qui permet de formater du texte
 print_r($liste);
@@ -64,7 +64,7 @@ echo '</pre>';
 //print_r() permet de visualiser les données d'un tableau
 //var_dump() Affiche les données d'un tableau, mais en formatage plus détaillé(type, clé, longueur, etc)
 
-$countries =[];
+$countries = [];
 $countries[] = "France"; //Ajouter une valeur à la fin du tableau
 $countries[] = "Belgium";
 $countries[] = "Germany";
@@ -84,12 +84,12 @@ La boucle foreach permet de parcourir un tableau et d'exécuter une fonction pou
 */
 
 // Le mot-clé as permet de définir un alias pour une variable. Avec cette synthaxe, country contient la valeur de l'index courant du tableau.
-foreach($countries as $country){
+foreach ($countries as $country) {
     echo $country . "<br>";
 }
 
 // avce cette synthaxe, on peut récupérer l'index parcouru avec la variable $key et la valeur avec la variable $value
-foreach($dataListe as $key=>$value){
+foreach ($dataListe as $key => $value) {
     echo $key . " : " . $value . "<br>";
 }
 
@@ -118,18 +118,53 @@ echo implode(" || ", $color);
 
 //Tableau multidimensionnel
 
-$tab_multi =[
-    0 => ["prenom" => "Martin","nom" =>"COTTET", "age" => 35],
-    1 => ["prenom" => "John","nom" =>"SMITH", "age" => 29],
-    2 => ["prenom" => "Paul","nom" =>"JOHNSON", "age" => 25],
-    3 => ["prenom" => "Guillaume","nom" =>"DUPONT", "age" => 30],
+$tab_multi = [
+    0 => ["prenom" => "Martin", "nom" => "COTTET", "age" => 35],
+    1 => ["prenom" => "John", "nom" => "SMITH", "age" => 29],
+    2 => ["prenom" => "Paul", "nom" => "JOHNSON", "age" => 25],
+    3 => ["prenom" => "Guillaume", "nom" => "DUPONT", "age" => 30],
+
 ];
 
 echo "<br>";
-echo $tab_multi[1]["nom"] ;
-echo "<br>";
+echo $tab_multi[1]["nom"];
+echo "<br><br>";
 
-//Afficher tous les prenoms en utilisant la boucle foreach ou for
+//TODO : Afficher tous les prenoms en utilisant la boucle foreach ou for
 
+for ($multi = 0; $multi < count($tab_multi); $multi++) {
+    echo $tab_multi[$multi]["prenom"] . "<br>";
+}
+
+
+foreach ($tab_multi as $key => $value) {
+    echo  $value["prenom"] . "<br>";
+}
 
 echo '<h2 class="subtitle">Les Objets</h2>';
+/* 
+Un objet est un type de donnée qui contient des variables et des méthodes.
+Une méthode est une fonction qui est déclarée dans un objet.
+*/
+
+class Etudiant {
+/* 
+Nous avons 3 niveaux de visibilité pour les variables et les méthodes d'un objet :
+- Public : Les variables et les méthodes sont accessibles depuis l'extérieur du fichier
+- Protected : Les variables et les méthodes sont accessibles depuis l'extérieur du fichier et les classes héritées
+- Private : Les variables et les méthodes sont accessibles uniquement depuis l'objet
+*/
+    public $prenom = "Martin";
+    public $nom = "COTTET";
+
+    public function presenter() {
+        echo "Bonjour " . $this->prenom . " " . $this->nom . "<br>";
+    }
+}
+
+$etudiant1 = new Etudiant(); //Création d'un objet.Le mot clé new permet de créer un objet.
+//Un objet est une instance de la classe Etudiant.Elle possède les même propriétés et méthodes que la classe.
+
+$etudiant1->presenter(); //Appel de la méthode presenter() de l'objet $etudiant1
+
+echo $etudiant1->prenom;
