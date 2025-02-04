@@ -1,6 +1,4 @@
 
-
-
 # EXERCICES PHP
 
 ## Exercice 1
@@ -33,7 +31,7 @@ Testez votre script avec les valeurs suivantes pour `$total_achats` :
 - Ajoutez une condition supplémentaire : si le montant dépasse 200 €, appliquez une réduction supplémentaire de 5 % après la première réduction.
 
 
-<hr><hr><hr><hr><hr>
+<hr><hr>
 
 
 ## Exercice 2
@@ -75,7 +73,7 @@ Testez votre script avec les valeurs suivantes pour `$statut_commande` :
 5. Une valeur non prévue (par exemple, "en cours")
 
 
-<hr><hr><hr><hr><hr>
+<hr><hr>
 
 
 ## Exercice 3
@@ -102,7 +100,9 @@ Découvrir et utiliser l'expression match pour gérer des conditions complexes.
 3. Affichez la catégorie d'utilisateur
 
 
-# FONCTIONS
+
+
+# FONCTIONS(En cours)
 
 TODO :
 
@@ -121,28 +121,27 @@ Si la note est comprise entre 17 et 20, on affiche "Très bien"
 
 
 
-<hr><hr><hr><hr><hr>
+<hr><hr>
 
-# ARRAY
+# ARRAY(En cours)
 
-/* 
-Écrivez un programme qui génère 35 notes aléatoires pour des étudiants d'une promotion. Chaque note doit être un nombre aléatoire compris entre 0 et 20. Les notes seront stockées dans un tableau.Utiliser rand() pour générer un nombre aléatoire.
+### Énoncé
+Écrivez un programme qui génère 35 notes aléatoires pour des étudiants d'une promotion. Chaque note doit être un nombre aléatoire compris entre 0 et 20. Les notes seront stockées dans un tableau. Utiliser `rand()` pour générer un nombre aléatoire.
 
-Affichez toutes les notes du tableau généré.
+### Instructions
+1. Affichez toutes les notes du tableau généré.
+2. Le programme doit calculer la moyenne des notes en parcourant le tableau et afficher le résultat.
+3. Le resultat doit être affiché avec 2 chiffres après la virgule.
+4. Pour obtenir la moyenne, vous devez additionner toutes les notes et diviser le résultat par le nombre d'étudiants.
 
-Ensuite, le programme doit calculer la moyenne des notes en parcourant le tableau et afficher le résultat.
+### Conditions d'affichage
+- Si la moyenne est supérieure ou égale à 12 :
+  - Afficher "La promotion est validée avec une moyenne de XX/20" en **vert**
+- Si la moyenne est supérieure ou égale à 10 et inférieure à 12 :
+  - Afficher "La promotion est validée avec une moyenne de XX/20" en **orange**
+- Si la moyenne est inférieure à 10 :
+  - Afficher "La promotion est recalée avec une moyenne de XX/20" en **rouge**
 
-Le resultat doit être affiché avec 2 chiffres après la virgule.
-
-Pour obtenir la moyenne, vous devez additionner toutes les notes et diviser le résultat par le nombre d'étudiants.
-
-Si la moyenne est supérieure ou égale à 12 alors affichez "La promotion est validée avec une moyenne de XX/20". La moyenne doit avor une couleur verte.
-
-Si la moyenne est supérieure ou égale à 10 et inférieure à 12 alors affichez "La promotion est validée avec une moyenne de XX/20". La moyenne doit avor une couleur orange.
-
-Si la moyenne est inférieure à 10 alors affichez "La promotion est recalée avec une moyenne de XX/20". La moyenne doit avor une couleur rouge.
-
-*/
 
 
 
