@@ -1,7 +1,7 @@
 
 # EXERCICES PHP
 
-## Exercice 1
+<h1 style="color:green;">## Exercice 1(Done)</h1>
 
 ### Contexte
 Vous travaillez sur un système de gestion de panier d'achat pour un site e-commerce. Le système doit afficher des messages personnalisés en fonction du montant total des achats d'un client et appliquer une réduction si certaines conditions sont remplies.
@@ -32,9 +32,9 @@ Testez votre script avec les valeurs suivantes pour `$total_achats` :
 
 
 <hr><hr>
+<h1 style="color:green;">## Exercice 2(Done)</h1>
 
 
-## Exercice 2
 
 ### Contexte
 Vous travaillez sur un système de gestion des commandes pour un site e-commerce. Vous devez afficher un message en fonction du statut de la commande. Les statuts possibles sont :
@@ -75,8 +75,8 @@ Testez votre script avec les valeurs suivantes pour `$statut_commande` :
 
 <hr><hr>
 
+<h1 style="color:green;">## Exercice 3(Done)</h1>
 
-## Exercice 3
 
 ### Contexte
 Vous travaillez sur un système de gestion des utilisateurs pour une plateforme en ligne. Vous devez déterminer la catégorie d'un utilisateur en fonction de son âge :
@@ -102,8 +102,8 @@ Découvrir et utiliser l'expression match pour gérer des conditions complexes.
 
 
 
-# FONCTIONS(En cours)
 
+<h1 style="color:red;">FONCTIONS(En cours)</h1>
 TODO :
 
 Écrivez une fonction appelée "verifierMoyenne" qui prend en paramètre une note , une matière , le prénom et le collège d'un élève et qui affiche la phrase suivante :
@@ -123,7 +123,7 @@ Si la note est comprise entre 17 et 20, on affiche "Très bien"
 
 <hr><hr>
 
-# ARRAY(En cours)
+<h1 style="color:red;">ARRAY(En cours)</h1>
 
 ### Énoncé
 Écrivez un programme qui génère 35 notes aléatoires pour des étudiants d'une promotion. Chaque note doit être un nombre aléatoire compris entre 0 et 20. Les notes seront stockées dans un tableau. Utiliser `rand()` pour générer un nombre aléatoire.
