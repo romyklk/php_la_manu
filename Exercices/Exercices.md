@@ -143,5 +143,34 @@ Si la note est comprise entre 17 et 20, on affiche "Très bien"
   - Afficher "La promotion est recalée avec une moyenne de XX/20" en **rouge**
 
 
+<hr><hr>
+
+<h1 style="color:red;">FORMULAIRE(En cours)</h1>
 
 
+1. **Création du formulaire d'inscription**
+    Créez un formulaire avec les champs suivants :
+        - **Civilité** : Choix avec des boutons radio ("M" pour Monsieur, "Mme" pour Madame)
+        - **Pseudo** : Champ texte pour saisir un pseudo
+        - **Email** : Champ texte pour saisir une adresse e-mail
+        - **Téléphone** : Champ texte pour saisir un numéro de téléphone
+        - **Mot de passe** : Champ texte pour saisir un mot de passe
+        - **Adresse** : Champ texte pour saisir l'adresse postale
+        - **Code postal** : Champ texte pour saisir un code postal
+        - **Ville** : Champ texte pour saisir la ville
+        - **Pays** : Champ texte pour saisir le pays
+        - **Bouton d'envoi** : Bouton pour soumettre le formulaire
+
+2. **Traitement PHP du formulaire**
+    - Lorsque le formulaire est soumis, récupérez les données et affichez-les à l'écran.
+
+3. **Validation des champs**
+    Implémentez les vérifications suivantes et affichez un message d'erreur sous le champ concerné en cas de problème :
+        - Si un champ est vide, un message d'erreur doit s'afficher sous ce champ.
+        - Si la longueur du **pseudo** est inférieure à 2 caractères, un message d'erreur doit s'afficher.
+        - Si la longueur du **pseudo** est supérieure à 20 caractères, un message d'erreur doit s'afficher.
+        - Si la longueur du **mot de passe** est inférieure à 8 caractères, un message d'erreur doit s'afficher.
+        - Si la longueur du **code postal** n'est pas égale à 5 caractères, un message d'erreur doit s'afficher.
+
+4. **Affichage des erreurs**
+    - Chaque message d'erreur doit être associé à un champ spécifique et s'afficher uniquement si la condition de validation échoue.
