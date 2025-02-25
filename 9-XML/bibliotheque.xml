@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bibliotheque>
+
+    <livre>
+        <titre id="1">Le Petit Prince</titre>
+        <auteur>Antoine de Saint-Exupéry</auteur>
+        <annee>1943</annee>
+    </livre>
+
+    <livre>
+        <titre id="2">Autre livre</titre>
+        <auteur>Antoine de Saint-Exupéry</auteur>
+        <annee>1943</annee>
+    </livre>
+
+    <livre>
+        <titre>Les Misérables</titre>
+        <auteur>Victor Hugo</auteur>
+        <annee>1962</annee>
+    </livre>
+    <livre>
+        <titre>Les Misérables</titre>
+        <auteur>Victor Hugo</auteur>
+        <annee>1962</annee>
+    </livre>
+    <livre>
+        <titre>Les Misérables</titre>
+        <auteur>Victor Hugo</auteur>
+        <annee>1962</annee>
+    </livre>
+    <livre>
+        <titre>Les Misérables</titre>
+        <auteur>Victor Hugo</auteur>
+        <annee>1962</annee>
+    </livre>
+<livre><titre>Les Misérables</titre><auteur>Victor Hugo</auteur><annee>1962</annee></livre><livre><titre>Les Misérables</titre><auteur>Victor Hugo</auteur><annee>1962</annee></livre><livre><titre>Les Misérables</titre><auteur>Victor Hugo</auteur><annee>1962</annee></livre><livre><titre>Les Misérables</titre><auteur>Victor Hugo</auteur><annee>1962</annee></livre></bibliotheque>
+<!-- 
+La première ligne contient la version XML du fichier ainsi que l'encodage du fichier.
+ -->
