@@ -16,6 +16,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     echo "</pre>"; 
     */
 
+
     //Si le fichier a bien été envoyé
     if(!empty($_FILES['monImage']['name'])){
 
@@ -40,6 +41,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             //move_uploaded_file() déplace un fichier téléchargé vers un nouvel emplacement
 
             move_uploaded_file($_FILES['monImage']['tmp_name'], DOSSIER_DES_DESTINATIONS . $nomImg);
+
+            
         }
     }
 

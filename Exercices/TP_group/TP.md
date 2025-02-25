@@ -161,7 +161,7 @@ mark {
 }
 </style>
 
-# <span style="background-color:#3498db;color:white;padding:0.5rem;border-radius:8px;box-shadow:0 4px 6px rgba(0, 0, 0, 0.1); display:block;text-align:center;">TP PHP : Gestion de Livres</span>
+# <span style="background-color:#3498db;color:white;padding:0.5rem;border-radius:8px;box-shadow:0 4px 6px rgba(0, 0, 0, 0.1); display:block;text-align:center;">TP 1 PHP : Gestion de Livres</span>
 
 Réalisation d'un site de gestion de livres en PHP sans base de données. Le site doit permettre d'ajouter des livres, de les afficher, de les partager par e-mail et de simuler un paiement.
 
@@ -201,7 +201,7 @@ Dans le menu "Livres", créez un formulaire permettant de renseigner les informa
 - **Prix**
 - **Description courte**
 - **Image de couverture** (URL)
-- **Lien vers la page d'achat**
+- **Lien vers la page d'achat(a href styliser comme un bouton)**
 
 ### 4. Traitement du Formulaire
 
@@ -228,9 +228,9 @@ Si une condition n'est pas respectée, affichez un **message d'erreur**.
 
 ### 6. Affichage des Données Saisies
 
-- Sur la page `details.php`, affichez les données saisies par l'utilisateur dans une **carte** avec un **bouton de paiement**.
-- Les données doivent être **stockées dans un fichier `livres.txt`**.
-- Si une donnée est manquante ou invalide, affichez un message d'erreur à sa place.
+- Sur la page `details.php`, affichez les données du livre saisies par l'utilisateur dans une **carte** avec un **bouton de paiement**.
+- Les données doivent être **stockées dans un fichier `livres.txt`**(Récupérer les données du livre grâce à l'ID).
+- Si le livre n'existe pas, affichez un message d'erreur à sa place avec un bouton de retour à la page `home.php`.
 - Lors du clic sur le bouton de paiement, envoyez les données à la page `paiement.php` via la méthode **GET** et affichez un **message de confirmation de paiement**.
 
 ### 7. Achat du Livre
@@ -240,6 +240,7 @@ Si une condition n'est pas respectée, affichez un **message d'erreur**.
 ### 8. Affichage des Livres Stockés
 
 - Parcourez le fichier `livres.txt` et affichez les livres sous forme de **cartes** sur la page `home.php`, **si des données existent dans le fichier**.
+- Si le fichier est vide ou n'existe pas, affichez un message pour demander à ajouter un livre car sa liste est vide.
 
 ### 9. Partager un Livre avec un Ami
 
@@ -258,26 +259,3 @@ Si une condition n'est pas respectée, affichez un **message d'erreur**.
 
 - Ajouter un input de type `file` pour permettre à l'utilisateur de télécharger un fichier image (format JPG, PNG,webp, avif) comme illustration du livre. 
 - Remplacer l'image par défaut par une illustration de livre.
-
-
-# GIT COMMANDS
-
-```bash
-git clone https://github.com/youssef-sadeghi/react-book-store.git
-```	
-
-cd project_repository
-
-```bash
-git add .
-```
-
-```bash
-git commit -m "commit message"
-```
-
-```bash
-git push origin main
-```
-
-git branch nom-de-la-branche

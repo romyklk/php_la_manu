@@ -1,0 +1,76 @@
+[
+    {
+        "id": "67b75fdd7439c",
+        "titre": "Le Myst\u00e9rieux Rayon Vert",
+        "auteur": "Jean Milouet",
+        "civilite": "M.",
+        "annee": "2021",
+        "pages": "170",
+        "categorie": [
+            "Po\u00e9sie",
+            "Drame"
+        ],
+        "prix": "55",
+        "description": "Marc, apr\u00e8s avoir publi\u00e9 les cahiers du docteur Bundesberg pensait s\u2019\u00eatre lib\u00e9r\u00e9 du secret que Blanca-Nieve lui avait l\u00e9gu\u00e9 avec sa maison. (Voir \u00ab L'\u00c9nigme Blanca Nieve \u00bb.)",
+        "image": "img_8d37360958d71445636377040c7cc3a1_1740070877.webp"
+    },
+    {
+        "id": "67b76072d1fba",
+        "titre": "Le Livre SEO : votre site internet n\u00b0 1 sur Google",
+        "auteur": "St\u00e9phane Alligne",
+        "civilite": "M.",
+        "annee": "2021",
+        "pages": "500",
+        "categorie": [
+            "Science"
+        ],
+        "prix": "9",
+        "description": "Aujourd\u2019hui, pas une seule entreprise ne peut se passer de la visibilit\u00e9 procur\u00e9e par Internet.Seulement, pour positionner votre site internet parmi les millions de r\u00e9sultats de recherche sur Google, il est indispensable d\u2019utiliser les bonnes m\u00e9thodes et les meilleures pratiques pour vous diff\u00e9rencier de vos concurrents.",
+        "image": "img_9d0967be34db3711c0d2f394a153b34e_1740071026.webp"
+    },
+    {
+        "id": "67b7649550bd5",
+        "titre": "Une hirondelle en Patagonie",
+        "auteur": "Diana Leseigneur",
+        "civilite": "M.",
+        "annee": "2012",
+        "pages": "150",
+        "categorie": [
+            "Roman"
+        ],
+        "prix": "9",
+        "description": "Et si la mort n\u2019\u00e9tait qu\u2019un point-virgule et l\u2019amour un arc-en-ciel ? Jonathan est musicien. Il vit au Chili depuis tr\u00e8s longtemps. Cette ann\u00e9e, il a d\u00e9cid\u00e9 d\u2019inviter sa petite-fille \u00e0 passer les f\u00eates de fin d\u2019ann\u00e9e avec lui. Tanya, une jeune Parisienne plut\u00f4t cart\u00e9sienne, ne sait pas encore que ses vacances \u00e0 l\u2019autre bout de la Terre vont changer sa vie.",
+        "image": "img_99c41992a24d84d8d9274939b85567a0_1740072085.jpg"
+    },
+    {
+        "id": "67bd4887066d2",
+        "titre": "Les mis\u00e9rables",
+        "auteur": "moi",
+        "civilite": "M.",
+        "annee": "2024",
+        "pages": "176",
+        "categorie": [
+            "Po\u00e9sie",
+            "Science-fiction",
+            "Drame"
+        ],
+        "prix": "20",
+        "description": "Le prix doit \u00eatre compris entre Le prix doit \u00eatre compris entre Le prix doit \u00eatre compris entre Le prix doit \u00eatre compris entre Le prix doit \u00eatre compris entre Le prix doit \u00eatre compris entre Le prix doit \u00eatre compris entre Le prix doit \u00eatre compris entre",
+        "image": "img_e8e22ee91beabeb44245ec716b5103c1_1740458119.jpeg"
+    },
+    {
+        "id": "67bd8e3a7f6f5",
+        "titre": "est",
+        "auteur": "est",
+        "civilite": "Mme",
+        "annee": "2020",
+        "pages": "111",
+        "categorie": [
+            "Th\u00e9\u00e2tre",
+            "Fantastique"
+        ],
+        "prix": "12",
+        "description": "estestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestest",
+        "image": "img_141c299c28be7297983f35b6e0f1f0cf_1740475962.jpg"
+    }
+]
