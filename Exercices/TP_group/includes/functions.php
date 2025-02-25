@@ -50,8 +50,8 @@ function sendMail($nom, $email, $sujet, $message)
         $mail->isSMTP();             // Utiliser le protocole SMTP
         $mail->Host       = 'smtp.gmail.com';  // Serveur SMTP
         $mail->SMTPAuth   = true;     // Activer l'authentification SMTP
-        $mail->Username   = 'romyklk2210@gmail.com';                     // Nom d'utilisateur SMTP
-        $mail->Password   = 'nidffsrfhttfviow';                               // Mot de passe SMTP
+        $mail->Username   = 'VOTRE EMAIL';                     // Nom d'utilisateur SMTP
+        $mail->Password   = 'VOTRE MOT DE PASSE D APPLICATION';                               // Mot de passe SMTP
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Sécuriser le transfert
         $mail->Port       = 465;                                    // Port TCP pour la connexion
 
